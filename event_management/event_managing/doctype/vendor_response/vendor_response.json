@@ -1,0 +1,78 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2025-08-11 16:30:19.579725",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "sourcing_request",
+  "quoted_amount",
+  "comments",
+  "column_break_apdc",
+  "vendor",
+  "response_date",
+  "attachment",
+  "accepted"
+ ],
+ "fields": [
+  {
+   "fieldname": "sourcing_request",
+   "fieldtype": "Link",
+   "label": "Sourcing Request",
+   "options": "Sourcing Request"
+  },
+  {
+   "fieldname": "vendor",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Vendor",
+   "options": "Supplier",
+   "reqd": 1
+  },
+  {
+   "fieldname": "quoted_amount",
+   "fieldtype": "Currency",
+   "in_list_view": 1,
+   "label": "Quoted Amount",
+   "reqd": 1
+  },
+  {
+   "fieldname": "comments",
+   "fieldtype": "Small Text",
+   "label": "Comments"
+  },
+  {
+   "fieldname": "column_break_apdc",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "response_date",
+   "fieldtype": "Date",
+   "label": "Response Date"
+  },
+  {
+   "fieldname": "attachment",
+   "fieldtype": "Attach",
+   "label": "Attachment"
+  },
+  {
+   "default": "0",
+   "fieldname": "accepted",
+   "fieldtype": "Check",
+   "label": "Accepted"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2025-08-11 16:37:28.743433",
+ "modified_by": "Administrator",
+ "module": "Event Managing",
+ "name": "Vendor Response",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}
