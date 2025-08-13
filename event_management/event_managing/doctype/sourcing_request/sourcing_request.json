@@ -14,6 +14,7 @@
   "amended_from",
   "section_break_hbcd",
   "description",
+  "items",
   "section_break_gusu",
   "vendor_response"
  ],
@@ -60,6 +61,7 @@
   {
    "fieldname": "description",
    "fieldtype": "Small Text",
+   "hidden": 1,
    "label": "Description"
   },
   {
@@ -71,12 +73,18 @@
    "fieldtype": "Table",
    "label": "Vendor Response",
    "options": "Vendor Response"
+  },
+  {
+   "fieldname": "items",
+   "fieldtype": "Table",
+   "label": "Items",
+   "options": "Opportunity Item"
   }
  ],
  "index_web_pages_for_search": 1,
  "is_submittable": 1,
  "links": [],
- "modified": "2025-08-11 16:35:58.553276",
+ "modified": "2025-08-12 18:34:01.430119",
  "modified_by": "Administrator",
  "module": "Event Managing",
  "name": "Sourcing Request",
