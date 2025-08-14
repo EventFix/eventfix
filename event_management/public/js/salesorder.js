@@ -1,6 +1,12 @@
 frappe.ui.form.on('Sales Order', {
     refresh(frm) {
         if (frm.doc.docstatus !== 1) return; // only after submission
+        
+        frm.page.add_inner_button(__('Vendor'), () => {
+            frappe.new_doc('Purchase Invoice', {
+               // party: frm.doc.supplier_name  // Link it to current Customer Inquiry
+            });
+        }, __('Pay'));
 
         const keepItems = ["Project","Payment Request", "Payment"];
 
