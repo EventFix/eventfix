@@ -84,7 +84,7 @@
  "index_web_pages_for_search": 1,
  "is_submittable": 1,
  "links": [],
- "modified": "2025-08-12 18:34:01.430119",
+ "modified": "2025-08-18 16:27:50.140005",
  "modified_by": "Administrator",
  "module": "Event Managing",
  "name": "Sourcing Request",
@@ -102,6 +102,16 @@
    "role": "System Manager",
    "share": 1,
    "submit": 1,
+   "write": 1
+  },
+  {
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Supplier",
+   "share": 1,
    "write": 1
   }
  ],
