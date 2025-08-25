@@ -1,6 +1,6 @@
 {
  "charts": [],
- "content": "[{\"id\":\"zppPzgTac8\",\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\">Planhook</span>\",\"col\":12}},{\"id\":\"Te3p8nhfXk\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Customer Inquiry\",\"col\":3}},{\"id\":\"jv55dXVD8X\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Sourcing Request\",\"col\":3}},{\"id\":\"W3kGXRBN25\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Supplier\",\"col\":3}},{\"id\":\"3ABaP1tUOG\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Quotation\",\"col\":3}},{\"id\":\"paVHHRrY8b\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Sales Order\",\"col\":3}}]",
+ "content": "[{\"id\":\"zppPzgTac8\",\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\">Planhook</span>\",\"col\":12}},{\"id\":\"Te3p8nhfXk\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Opportunity\",\"col\":3}},{\"id\":\"jv55dXVD8X\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Sourcing Request\",\"col\":3}},{\"id\":\"W3kGXRBN25\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Supplier\",\"col\":3}},{\"id\":\"3ABaP1tUOG\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Quotation\",\"col\":3}},{\"id\":\"paVHHRrY8b\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Sales Order\",\"col\":3}}]",
  "creation": "2025-08-09 20:05:03.552410",
  "custom_blocks": [],
  "docstatus": 0,
@@ -13,7 +13,7 @@
  "is_hidden": 0,
  "label": "Planhook",
  "links": [],
- "modified": "2025-08-18 16:31:48.764920",
+ "modified": "2025-08-25 15:49:55.352003",
  "modified_by": "Administrator",
  "module": "Event Managing",
  "name": "Planhook",
@@ -25,6 +25,14 @@
  "roles": [],
  "sequence_id": 1.0,
  "shortcuts": [
+  {
+   "color": "Grey",
+   "doc_view": "List",
+   "label": "Opportunity",
+   "link_to": "Opportunity",
+   "stats_filter": "[]",
+   "type": "DocType"
+  },
   {
    "color": "Grey",
    "doc_view": "List",
@@ -46,14 +54,6 @@
    "doc_view": "List",
    "label": "Supplier",
    "link_to": "Supplier",
-   "stats_filter": "[]",
-   "type": "DocType"
-  },
-  {
-   "color": "Grey",
-   "doc_view": "List",
-   "label": "Customer Inquiry",
-   "link_to": "Opportunity",
    "stats_filter": "[]",
    "type": "DocType"
   },
