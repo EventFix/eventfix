@@ -149,7 +149,11 @@ doctype_js = {
 # 		"on_trash": "method"
 # 	}
 # }
-
+doc_events = {
+    "Event Request": {
+        "before_insert": "event_management.event_managing.api.event_request.set_project_creator"
+    }
+}
 # Scheduled Tasks
 # ---------------
 

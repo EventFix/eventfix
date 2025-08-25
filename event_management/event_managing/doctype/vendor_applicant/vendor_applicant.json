@@ -15,7 +15,9 @@
   "category",
   "documents",
   "amended_from",
-  "status"
+  "status",
+  "pan_number",
+  "gst_number"
  ],
  "fields": [
   {
@@ -83,12 +85,23 @@
    "fieldtype": "Select",
    "label": "Status",
    "options": "Draft\nUnder Review\nApproved\nReject"
+  },
+  {
+   "fieldname": "pan_number",
+   "fieldtype": "Data",
+   "label": "Pan Number",
+   "reqd": 1
+  },
+  {
+   "fieldname": "gst_number",
+   "fieldtype": "Data",
+   "label": "Gst Number"
   }
  ],
  "index_web_pages_for_search": 1,
  "is_submittable": 1,
  "links": [],
- "modified": "2025-08-17 16:33:34.990754",
+ "modified": "2025-08-25 09:53:08.497529",
  "modified_by": "Administrator",
  "module": "Event Managing",
  "name": "Vendor Applicant",
