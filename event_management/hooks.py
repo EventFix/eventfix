@@ -150,7 +150,7 @@ doctype_js = {
 # 	}
 # }
 doc_events = {
-    "Event Request": {
+    "Opportunity": {
         "before_insert": "event_management.event_managing.api.event_request.set_project_creator"
     }
 }
