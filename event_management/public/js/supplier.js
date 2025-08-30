@@ -18,7 +18,8 @@ frappe.ui.form.on('Supplier', {
     });
 
     // Sub-Category must be a child of Vendor Type
-    frm.set_query('custom_subcategory', function() {
+    // frm.set_query('custom_subcategory', function() { change field link to multi select
+    frm.set_query('custom_subcategories', function() {
       if (!frm.doc.custom_vendor_category) {
         // prevent showing everything when parent is empty
         return { filters: { name: "__none" } };
@@ -34,7 +35,8 @@ frappe.ui.form.on('Supplier', {
 
   vendor_type(frm) {
     // when changing parent, clear old child and reapply filter
-    frm.set_value('custom_subcategory', null);
+    // frm.set_value('custom_subcategory', null); change field link to multi select
+    frm.set_value('custom_subcategories', null);
     frm.trigger('onload');
   }
 })
