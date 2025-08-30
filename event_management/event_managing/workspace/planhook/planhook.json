@@ -13,7 +13,7 @@
  "is_hidden": 0,
  "label": "Planhook",
  "links": [],
- "modified": "2025-08-30 16:07:40.101618",
+ "modified": "2025-08-30 16:47:19.199284",
  "modified_by": "Administrator",
  "module": "Event Managing",
  "name": "Planhook",
@@ -53,9 +53,9 @@
    "color": "Red",
    "doc_view": "List",
    "format": "{} Open",
-   "label": "External Projects",
+   "label": "Internal Projects",
    "link_to": "Project",
-   "stats_filter": "[[\"Project\",\"project_type\",\"!=\",\"Internal\",false]]",
+   "stats_filter": "[[\"Project\",\"project_type\",\"=\",\"Internal\",false],[\"Project\",\"status\",\"=\",\"Open\",false]]",
    "type": "DocType"
   },
   {
@@ -67,20 +67,20 @@
    "type": "DocType"
   },
   {
-   "color": "Red",
-   "doc_view": "List",
-   "format": "{} Open",
-   "label": "Internal Projects",
-   "link_to": "Project",
-   "stats_filter": "[[\"Project\",\"project_type\",\"=\",\"Internal\",false]]",
-   "type": "DocType"
-  },
-  {
    "color": "Grey",
    "doc_view": "List",
    "label": "Sales Order",
    "link_to": "Sales Order",
    "stats_filter": "[]",
+   "type": "DocType"
+  },
+  {
+   "color": "Red",
+   "doc_view": "List",
+   "format": "{} Open",
+   "label": "External Projects",
+   "link_to": "Project",
+   "stats_filter": "[[\"Project\",\"project_type\",\"!=\",\"Internal\",false],[\"Project\",\"status\",\"=\",\"Open\",false]]",
    "type": "DocType"
   }
  ],
