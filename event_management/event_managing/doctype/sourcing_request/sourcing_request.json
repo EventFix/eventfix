@@ -13,8 +13,8 @@
   "category",
   "amended_from",
   "section_break_hbcd",
-  "description",
   "items",
+  "description",
   "section_break_gusu",
   "vendor_response"
  ],
@@ -41,9 +41,10 @@
   },
   {
    "fieldname": "category",
-   "fieldtype": "Select",
+   "fieldtype": "Link",
    "label": "Category",
-   "options": "\nVenue\nAV\nCatering\nStaff\nDecor\nLogistics"
+   "link_filters": "[[\"Item Group\",\"is_group\",\"=\",1],[\"Item Group\",\"parent_item_group\",\"is\",\"set\"]]",
+   "options": "Item Group"
   },
   {
    "fieldname": "required_by_date",
@@ -84,7 +85,7 @@
  "index_web_pages_for_search": 1,
  "is_submittable": 1,
  "links": [],
- "modified": "2025-08-18 16:27:50.140005",
+ "modified": "2025-09-01 16:19:43.647242",
  "modified_by": "Administrator",
  "module": "Event Managing",
  "name": "Sourcing Request",
