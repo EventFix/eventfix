@@ -251,4 +251,4 @@ doc_events = {
 # 	"Logging DocType Name": 30  # days to retain logs
 # }
 
-fixtures = [{"dt": "Item"}]
+fixtures = [{"dt": "Item Group"}]
