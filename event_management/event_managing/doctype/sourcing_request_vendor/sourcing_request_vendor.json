@@ -1,0 +1,67 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2025-09-02 17:56:48.794914",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "vendor",
+  "token",
+  "status",
+  "column_break_usbc",
+  "email",
+  "email_send_on"
+ ],
+ "fields": [
+  {
+   "fieldname": "vendor",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Vendor",
+   "options": "Supplier"
+  },
+  {
+   "fetch_from": "vendor.email_id",
+   "fieldname": "email",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Email",
+   "options": "Email"
+  },
+  {
+   "fieldname": "token",
+   "fieldtype": "Data",
+   "label": "Token"
+  },
+  {
+   "default": "Pending",
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "label": "Status",
+   "options": "Pending\nSent\nResponded\nAccepted\nRejected"
+  },
+  {
+   "fieldname": "column_break_usbc",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "email_send_on",
+   "fieldtype": "Datetime",
+   "in_list_view": 1,
+   "label": "Email Send on"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2025-09-02 18:04:25.687469",
+ "modified_by": "Administrator",
+ "module": "Event Managing",
+ "name": "Sourcing Request Vendor",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

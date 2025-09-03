@@ -1,0 +1,57 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2025-09-03 19:29:56.161669",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "vendor",
+  "quoted_amount",
+  "column_break_xqpf",
+  "attachments",
+  "comments"
+ ],
+ "fields": [
+  {
+   "fieldname": "vendor",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Vendor"
+  },
+  {
+   "fieldname": "comments",
+   "fieldtype": "Small Text",
+   "in_list_view": 1,
+   "label": "Comments"
+  },
+  {
+   "fieldname": "column_break_xqpf",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "quoted_amount",
+   "fieldtype": "Currency",
+   "in_list_view": 1,
+   "label": "Quoted Amount"
+  },
+  {
+   "fieldname": "attachments",
+   "fieldtype": "Attach",
+   "in_list_view": 1,
+   "label": "Attachments"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2025-09-03 19:33:00.785144",
+ "modified_by": "Administrator",
+ "module": "Event Managing",
+ "name": "Sourcing Request Vendor Response",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}
