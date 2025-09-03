@@ -16,6 +16,7 @@
   "items",
   "description",
   "section_break_gusu",
+  "assigned_vendors",
   "vendor_response"
  ],
  "fields": [
@@ -72,20 +73,26 @@
   {
    "fieldname": "vendor_response",
    "fieldtype": "Table",
-   "label": "Vendor Response",
-   "options": "Vendor Response"
+   "label": "Vendor Responses",
+   "options": "Sourcing Request Vendor Response"
   },
   {
    "fieldname": "items",
    "fieldtype": "Table",
    "label": "Items",
    "options": "Opportunity Item"
+  },
+  {
+   "fieldname": "assigned_vendors",
+   "fieldtype": "Table",
+   "label": "Assigned Vendors",
+   "options": "Sourcing Request Vendor"
   }
  ],
  "index_web_pages_for_search": 1,
  "is_submittable": 1,
  "links": [],
- "modified": "2025-09-01 16:19:43.647242",
+ "modified": "2025-09-03 19:33:49.033774",
  "modified_by": "Administrator",
  "module": "Event Managing",
  "name": "Sourcing Request",
