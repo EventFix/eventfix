@@ -10,6 +10,7 @@
   "sourcing_request",
   "vendor",
   "quoted_amount",
+  "token",
   "column_break_apdc",
   "response_date",
   "attachment",
@@ -57,11 +58,16 @@
    "fieldtype": "Attach",
    "in_list_view": 1,
    "label": "Attachment"
+  },
+  {
+   "fieldname": "token",
+   "fieldtype": "Data",
+   "label": "Token"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2025-09-03 19:32:04.203623",
+ "modified": "2025-09-04 17:44:05.841158",
  "modified_by": "Administrator",
  "module": "Event Managing",
  "name": "Vendor Response",

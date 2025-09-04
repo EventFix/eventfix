@@ -49,6 +49,24 @@ frappe.ui.form.on("Sourcing Request", {
                 }
             });
         }).addClass("btn-primary");
+
+        // Show button only when vendors are assigned for Send Emails
+        if ((frm.doc.assigned_vendors || []).length > 0 && frm.doc.docstatus < 2) {
+            frm.add_custom_button(__("Send Email"), () => {
+                frappe.call({
+                    method: "event_management.event_managing.doctype.sourcing_request.sourcing_request.send_rfq_emails",
+                    args: { name: frm.doc.name },
+                    freeze: true,
+                    freeze_message: __("Sending emails..."),
+                    callback: (r) => {
+                        if (r.message && r.message.sent) {
+                            frappe.msgprint(__("Emails sent to assigned vendors."));
+                            frm.reload_doc();
+                        }
+                    }
+                });
+            }).addClass("btn-primary");
+        }
     
          // Check if at least one accepted vendor exists
         let accepted_vendors = frm.doc.vendor_response.filter(row => row.accepted);
