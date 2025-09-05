@@ -93,24 +93,33 @@ def send_rfq_emails(name):
 Hello,
 
 You have been invited to quote for sourcing request <b>{doc.name}</b>.
-
+<br>
 <b>Items:</b><br>
 <pre style="font-size:13px">{frappe.utils.escape_html(items_text)}</pre>
 
 Please submit your quote and upload documents using this secure link:
+<br>
 <a href="{link}">{link}</a>
-
+<br>
 Regards,<br>
-{frappe.utils.get_fullname(frappe.session.user)}
+
 """
+# {frappe.utils.get_fullname(frappe.session.user)} below regards
         frappe.sendmail(
             recipients=[row.email],
             subject=subject,
             message=message
         )
 
-        row.email_sent_on = now_datetime()
-        row.status = "Sent"
+        # Update only the child row 
+        frappe.db.set_value(
+            "Sourcing Request Vendor",  
+            row.name,  
+            {
+                "email_send_on": now_datetime(),
+                "status": "Sent"
+            }
+        )
 
     # doc.save(ignore_permissions=True)
     return {"sent": True, "count": len(doc.assigned_vendors or [])}

@@ -49,6 +49,7 @@
    "fieldtype": "Column Break"
   },
   {
+   "default": "Today",
    "fieldname": "response_date",
    "fieldtype": "Date",
    "label": "Response Date"
@@ -67,7 +68,7 @@
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2025-09-04 17:44:05.841158",
+ "modified": "2025-09-05 16:13:16.788652",
  "modified_by": "Administrator",
  "module": "Event Managing",
  "name": "Vendor Response",
